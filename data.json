@@ -1,12 +1,22 @@
 {
-    "last_updated": "2026-04-27 04:44:28",
-    "overall_score": 70,
+    "last_updated": "2026-04-27 05:00:55",
+    "overall_score": 72,
     "fear_greed": "Greed",
     "vix": 18.71,
     "iv_rank": 29.81,
-    "breadth": {
-        "advancing": 7,
-        "declining": 3
+    "signals": {
+        "buys": [
+            "None"
+        ],
+        "sells": [
+            "NVDA",
+            "AMD",
+            "MSFT",
+            "GOOGL",
+            "META",
+            "AMZN",
+            "PYPL"
+        ]
     },
     "sector_rs": {
         "XLK": 1.078,
@@ -23,31 +33,39 @@
     },
     "money_flow": {
         "to": [
-            "Tech"
+            "Tech",
+            "Real Estate"
         ],
         "from": [
-            "Comm",
-            "Disc",
-            "Staples",
             "Energy",
-            "Finance",
-            "Health",
-            "Indust",
-            "Mat",
-            "Util"
+            "Health"
         ]
     },
-    "option_sentiment": "High Call Volume",
-    "upcoming_events": [
+    "option_sentiment": "High Call Volume / Bullish Bias",
+    "calendar": [
         {
-            "event": "FOMC Meeting",
-            "date": "May 3",
-            "impact": "High"
+            "date": "Apr 28",
+            "event": "MSFT Earnings",
+            "impact": "Critical",
+            "forecast": "Expected beat on Azure growth"
         },
         {
-            "event": "NVDA Earnings",
-            "date": "May 22",
-            "impact": "Critical"
+            "date": "Apr 29",
+            "event": "GOOGL Earnings",
+            "impact": "High",
+            "forecast": "Focus on AI integration & Ad spend"
+        },
+        {
+            "date": "May 01",
+            "event": "ISM Manufacturing",
+            "impact": "Medium",
+            "forecast": "Slight expansion expected"
+        },
+        {
+            "date": "May 03",
+            "event": "FOMC Decision",
+            "impact": "Critical",
+            "forecast": "Focus on 2026 cut roadmap"
         }
     ]
 }
