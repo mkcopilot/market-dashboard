@@ -11,122 +11,103 @@
         body { font-family: 'Inter', sans-serif; background-color: #05070a; color: #94a3b8; }
         .mono { font-family: 'JetBrains Mono', monospace; }
         .card { background: #0f172a; border: 1px solid #1e293b; border-radius: 1rem; }
+        .buy-pill { color: #10b981; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.2); }
+        .sell-pill { color: #ef4444; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); }
     </style>
 </head>
 <body class="p-4 md:p-8">
     <div class="max-w-7xl mx-auto">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 border-b border-slate-800 pb-6">
             <div>
-                <h1 class="text-white text-2xl font-bold tracking-tight">ALPHA TERMINAL <span class="text-emerald-500 text-sm font-mono ml-2">LIVE</span></h1>
-                <p id="last-sync" class="text-[10px] mono uppercase mt-1 text-slate-500">Syncing...</p>
+                <h1 class="text-white text-2xl font-bold tracking-tight">ALPHA TERMINAL <span class="text-emerald-500 text-sm font-mono ml-2">v2.1</span></h1>
+                <p id="last-sync" class="text-[10px] mono uppercase mt-1 text-slate-500 tracking-widest">SYNCING...</p>
             </div>
-            <div class="flex gap-6 mt-4 md:mt-0">
-                <div class="text-center">
-                    <p class="text-[10px] font-bold uppercase">Market Health</p>
-                    <p id="health-score" class="text-2xl font-bold text-white">--</p>
-                </div>
-                <div class="text-center">
-                    <p class="text-[10px] font-bold uppercase">Fear & Greed</p>
-                    <p id="fg-index" class="text-2xl font-bold text-orange-400">--</p>
-                </div>
+            <div class="flex gap-8 mt-4 md:mt-0">
+                <div class="text-center"><p class="text-[10px] font-bold uppercase text-slate-500">Market Health</p><p id="h-score" class="text-2xl font-bold text-white">--</p></div>
+                <div class="text-center"><p class="text-[10px] font-bold uppercase text-slate-500">Fear/Greed</p><p id="fg-val" class="text-2xl font-bold text-orange-400">--</p></div>
             </div>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            <div class="card p-6">
+                <h3 class="text-white text-[10px] font-bold uppercase mb-6 tracking-widest">Trade Radar</h3>
+                <div class="space-y-6">
+                    <div>
+                        <p class="text-[9px] font-bold text-emerald-500 uppercase mb-3">Technical Buys (Oversold)</p>
+                        <div id="buys" class="flex flex-wrap gap-2 text-[10px] font-mono font-bold uppercase"></div>
+                    </div>
+                    <div class="pt-6 border-t border-slate-800">
+                        <p class="text-[9px] font-bold text-red-500 uppercase mb-3">Technical Sells (Overbought)</p>
+                        <div id="sells" class="flex flex-wrap gap-2 text-[10px] font-mono font-bold uppercase"></div>
+                    </div>
+                </div>
+            </div>
+
             <div class="lg:col-span-2 card p-6">
-                <h3 class="text-white text-xs font-bold uppercase mb-6 flex items-center gap-2">Institutional Sector Rotation (RS)</h3>
+                <h3 class="text-white text-[10px] font-bold uppercase mb-4">Institutional Sector Rotation (RS)</h3>
                 <div id="sector-chart"></div>
             </div>
 
-            <div class="space-y-6">
-                <div class="card p-6">
-                    <h3 class="text-slate-500 text-[10px] font-bold uppercase mb-4">Capital Flow</h3>
-                    <div class="grid grid-cols-1 gap-3">
-                        <div class="bg-emerald-500/10 p-3 rounded-lg border border-emerald-500/20">
-                            <p class="text-[9px] text-emerald-500 font-bold uppercase">Money To</p>
-                            <p id="money-to" class="text-white text-xs font-bold mt-1">--</p>
-                        </div>
-                        <div class="bg-red-500/10 p-3 rounded-lg border border-red-500/20">
-                            <p class="text-[9px] text-red-500 font-bold uppercase">Money From</p>
-                            <p id="money-from" class="text-white text-xs font-bold mt-1">--</p>
-                        </div>
-                    </div>
+            <div class="card p-6">
+                <h3 class="text-slate-500 text-[10px] font-bold uppercase mb-4">Option Sentiment</h3>
+                <p id="opt-sent" class="text-white text-md font-bold mb-4 italic">--</p>
+                <div class="bg-emerald-500/10 p-3 rounded-lg border border-emerald-500/20 mb-3">
+                    <p class="text-[9px] text-emerald-500 font-bold uppercase mb-1">Money To</p>
+                    <p id="m-to" class="text-white text-xs font-bold">--</p>
                 </div>
-
-                <div class="card p-6">
-                    <h3 class="text-slate-500 text-[10px] font-bold uppercase mb-4">Option Sentiment & Breadth</h3>
-                    <p id="opt-sentiment" class="text-white text-sm font-semibold mb-3">--</p>
-                    <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
-                        <div id="breadth-fill" class="bg-emerald-500 h-full w-0 transition-all duration-1000"></div>
-                    </div>
-                    <p id="breadth-text" class="text-[10px] mt-2 mono uppercase">Breadth: --</p>
+                <div class="bg-red-500/10 p-3 rounded-lg border border-red-500/20">
+                    <p class="text-[9px] text-red-500 font-bold uppercase mb-1">Money From</p>
+                    <p id="m-from" class="text-white text-xs font-bold">--</p>
                 </div>
             </div>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
-            <div class="card p-6">
-                <h3 class="text-slate-500 text-[10px] font-bold uppercase mb-4">Volatility Triggers</h3>
-                <div id="event-list" class="space-y-3 text-sm"></div>
-            </div>
-            <div class="card p-6">
-                <h3 class="text-slate-500 text-[10px] font-bold uppercase mb-4">Risk Positioning</h3>
-                <div class="flex justify-between py-2 border-b border-slate-800">
-                    <span class="text-xs">IV Rank</span>
-                    <span id="iv-val" class="text-white font-mono font-bold">--</span>
-                </div>
-                <div class="flex justify-between py-2">
-                    <span class="text-xs">Strategy</span>
-                    <span id="strat-val" class="text-orange-400 text-[10px] font-bold uppercase">--</span>
-                </div>
+        <div class="mt-6 card p-6 overflow-hidden">
+            <h3 class="text-white text-[10px] font-bold uppercase mb-6 tracking-widest">Market Impact & Earnings Forecast</h3>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead class="text-[10px] text-slate-500 uppercase border-b border-slate-800">
+                        <tr><th class="pb-3 px-2">Date</th><th class="pb-3 px-2">Event</th><th class="pb-3 px-2">Impact</th><th class="pb-3 px-2">Forecast Context</th></tr>
+                    </thead>
+                    <tbody id="cal-body" class="text-xs text-slate-300"></tbody>
+                </table>
             </div>
         </div>
     </div>
 
     <script>
-        fetch('./data.json').then(res => res.json()).then(data => {
-            // Safe assignment with Fallbacks
-            document.getElementById('last-sync').innerText = "LAST SYNC: " + (data.last_updated || "N/A");
-            document.getElementById('health-score').innerText = (data.overall_score || "0") + "/100";
-            document.getElementById('fg-index').innerText = data.fear_greed || "Neutral";
-            document.getElementById('money-to').innerText = (data.money_flow?.to || []).join(', ');
-            document.getElementById('money-from').innerText = (data.money_flow?.from || []).join(', ');
-            document.getElementById('opt-sentiment').innerText = data.option_sentiment || "Analyzing...";
-            
-            // Breadth Bar
-            const adv = data.breadth?.advancing || 0;
-            const dec = data.breadth?.declining || 1;
-            const bPerc = (adv / (adv + dec)) * 100;
-            document.getElementById('breadth-fill').style.width = bPerc + "%";
-            document.getElementById('breadth-text').innerText = `Breadth: ${adv} Adv / ${dec} Dec`;
+        fetch('./data.json').then(r => r.json()).then(d => {
+            document.getElementById('last-sync').innerText = "LAST SYNC: " + d.last_updated;
+            document.getElementById('h-score').innerText = d.overall_score + "/100";
+            document.getElementById('fg-val').innerText = d.fear_greed;
+            document.getElementById('opt-sent').innerText = d.option_sentiment;
+            document.getElementById('m-to').innerText = d.money_flow.to.join(', ');
+            document.getElementById('m-from').innerText = d.money_flow.from.join(', ');
 
-            // IV & Strategy
-            document.getElementById('iv-val').innerText = (data.iv_rank || "0") + "%";
-            document.getElementById('strat-val').innerText = data.iv_rank > 50 ? "Sell Premium" : "Buy Options";
+            // Radar Logic
+            document.getElementById('buys').innerHTML = d.signals.buys.map(t => `<span class="px-2 py-1 rounded buy-pill">${t}</span>`).join('');
+            document.getElementById('sells').innerHTML = d.signals.sells.map(t => `<span class="px-2 py-1 rounded sell-pill">${t}</span>`).join('');
 
-            // Events
-            if(data.upcoming_events) {
-                document.getElementById('event-list').innerHTML = data.upcoming_events.map(e => `
-                    <div class="flex justify-between">
-                        <span class="text-slate-300 font-bold">${e.event}</span>
-                        <span class="text-slate-500 mono">${e.date}</span>
-                    </div>
-                `).join('');
-            }
+            // Calendar Logic
+            document.getElementById('cal-body').innerHTML = d.calendar.map(e => `
+                <tr class="border-b border-slate-800/50 hover:bg-slate-800/30 transition-colors">
+                    <td class="py-4 px-2 mono text-slate-500">${e.date}</td>
+                    <td class="py-4 px-2 font-bold text-white">${e.event}</td>
+                    <td class="py-4 px-2"><span class="px-2 py-1 rounded text-[9px] font-bold ${e.impact === 'Critical' ? 'bg-red-500/20 text-red-400' : 'bg-orange-500/20 text-orange-400'}">${e.impact}</span></td>
+                    <td class="py-4 px-2 italic text-slate-400">${e.forecast}</td>
+                </tr>
+            `).join('');
 
-            // Chart
-            if(data.sector_rs) {
-                new ApexCharts(document.querySelector("#sector-chart"), {
-                    series: [{ name: 'RS', data: Object.values(data.sector_rs) }],
-                    chart: { type: 'bar', height: 300, toolbar: { show: false } },
-                    plotOptions: { bar: { distributed: true, borderRadius: 4, columnWidth: '60%' } },
-                    xaxis: { categories: Object.keys(data.sector_rs) },
-                    colors: Object.values(data.sector_rs).map(v => v > 1 ? '#10b981' : '#ef4444'),
-                    theme: { mode: 'dark' },
-                    grid: { show: false }
-                }).render();
-            }
-        }).catch(err => console.error("Data Load Error:", err));
+            // Chart Logic
+            new ApexCharts(document.querySelector("#sector-chart"), {
+                series: [{ name: 'RS', data: Object.values(d.sector_rs) }],
+                chart: { type: 'bar', height: 260, toolbar: { show: false } },
+                plotOptions: { bar: { distributed: true, borderRadius: 4, columnWidth: '60%' } },
+                xaxis: { categories: Object.keys(d.sector_rs), axisBorder: { show: false } },
+                colors: Object.values(d.sector_rs).map(v => v > 1 ? '#10b981' : '#ef4444'),
+                theme: { mode: 'dark' }, grid: { show: false }
+            }).render();
+        });
     </script>
 </body>
 </html>
