@@ -1,114 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><title>Alpha Terminal | Market Intelligence</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Terminal | Market Pulse</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+    </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen p-6 font-sans">
-    <div class="max-w-6xl mx-auto">
-        <header class="flex justify-between items-center mb-10 border-b border-slate-800 pb-6">
-            <h1 class="text-4xl font-black italic tracking-tighter text-white">ALPHA<span class="text-blue-500">TERMINAL</span></h1>
-            <div class="text-right text-slate-500 font-mono text-xs" id="ts">SYNCING DATA...</div>
-        </header>
+<body class="bg-[#05080f] text-slate-300 min-h-screen p-4 md:p-8">
 
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
-            <div class="bg-slate-900 p-5 rounded-2xl border border-slate-800 shadow-lg">
-                <p class="text-[10px] uppercase text-slate-500 font-bold mb-1">Risk/Trend Score</p>
-                <div id="risk-val" class="text-3xl font-black text-blue-400">--</div>
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+            <div>
+                <h1 class="text-2xl font-bold text-white tracking-tighter flex items-center gap-2">
+                    <span class="w-3 h-3 bg-emerald-500 rounded-full shadow-[0_0_12px_#10b981]"></span>
+                    ALPHA TERMINAL <span class="text-slate-500 font-light text-sm ml-2">v2.0</span>
+                </h1>
+                <p id="ts" class="text-[10px] text-slate-500 font-mono mt-1 uppercase tracking-widest">LOADING SYNC...</p>
             </div>
-            <div class="bg-slate-900 p-5 rounded-2xl border border-slate-800 text-center shadow-lg">
-                <p class="text-[10px] uppercase text-slate-500 font-bold mb-1">Sentiment</p>
-                <div id="sent-val" class="text-3xl font-black">--</div>
-                <div id="sent-lbl" class="text-[10px] text-blue-500 font-bold uppercase">--</div>
-            </div>
-            <div class="bg-slate-900 p-5 rounded-2xl border border-slate-800 shadow-lg">
-                <p class="text-[10px] uppercase text-slate-500 font-bold mb-1">VIX Fear Gauge</p>
-                <div id="vix-val" class="text-3xl font-black">--</div>
-                <div id="vix-chg" class="text-[10px] font-bold">--</div>
-            </div>
-            <div class="bg-slate-900 p-5 rounded-2xl border border-slate-800 shadow-lg">
-                <p class="text-[10px] uppercase text-slate-500 font-bold mb-1">Breadth (RSP/SPY)</p>
-                <div id="ratio-val" class="text-3xl font-black text-emerald-400">--</div>
-                <div id="breadth-sig" class="text-[10px] text-slate-500 font-bold uppercase">--</div>
+            
+            <div class="flex gap-4">
+                <div class="bg-slate-900/50 border border-slate-800 px-4 py-2 rounded-xl">
+                    <div class="text-[10px] text-slate-500 font-bold uppercase mb-1">IV Rank</div>
+                    <div id="iv-rank" class="text-xl font-bold text-white leading-none">--</div>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800 px-4 py-2 rounded-xl">
+                    <div class="text-[10px] text-slate-500 font-bold uppercase mb-1">VIX</div>
+                    <div id="vix-val" class="text-xl font-bold text-white leading-none">--</div>
+                </div>
             </div>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
             <div class="lg:col-span-2 bg-slate-900 p-6 rounded-2xl border border-slate-800 shadow-2xl">
-                <h3 class="text-slate-400 text-xs font-bold uppercase mb-6 tracking-widest">Sector Rotation & Volume Surge</h3>
+                <h3 class="text-slate-400 text-xs font-bold uppercase mb-6 tracking-widest">Sector Strength vs SPY</h3>
                 <div id="sector-chart"></div>
             </div>
 
-            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 shadow-2xl overflow-hidden">
-                <h3 class="text-slate-400 text-xs font-bold uppercase mb-4 tracking-widest flex items-center gap-2">
-                    <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span> Live Market News
-                </h3>
-                <div id="news-feed" class="space-y-4 max-h-[400px] overflow-y-auto pr-2 text-sm">
-                    <p class="text-slate-500 italic text-xs">Loading headlines...</p>
+            <div class="space-y-6">
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 shadow-2xl">
+                    <h3 class="text-slate-400 text-xs font-bold uppercase mb-4 tracking-widest">Strategic Positioning</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="text-[10px] text-slate-500 uppercase mb-1">Current Bias</div>
+                            <div id="market-bias" class="text-emerald-400 font-bold text-lg uppercase">--</div>
+                        </div>
+                        <div>
+                            <div class="text-[10px] text-slate-500 uppercase mb-1">Risk Action</div>
+                            <div id="risk-action" class="text-orange-400 font-bold italic text-xs uppercase">--</div>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800">
+                            <div class="text-[10px] text-slate-500 uppercase mb-2">Trim Laggards (Below 20MA)</div>
+                            <div id="trim-list" class="flex flex-wrap gap-2 text-xs font-mono text-white">--</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
-                <h3 class="text-slate-400 text-xs font-bold uppercase mb-4">Strategic Positioning</h3>
-                <div class="space-y-2 text-sm">
-                    <div class="flex justify-between border-b border-slate-800 pb-2"><span>Market Bias:</span> <span class="text-emerald-400 font-bold uppercase">Bullish Retracement</span></div>
-                    <div class="flex justify-between border-b border-slate-800 pb-2"><span>Exposure:</span> <span class="text-orange-400 font-bold italic text-xs">TRIM LAGGARDS / ADD DEFENSIVES</span></div>
-                </div>
-            </div>
-            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
-                <h3 class="text-slate-400 text-xs font-bold uppercase mb-4">Upcoming Triggers</h3>
-                <div class="text-[11px] space-y-2">
-                    <div class="flex gap-2"><span class="text-blue-500 font-bold">WED</span> <span>FOMC Meeting + Meta/Amazon Earnings</span></div>
-                    <div class="flex gap-2"><span class="text-blue-500 font-bold">THU</span> <span>Apple Earnings + US Unemployment Claims</span></div>
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 shadow-2xl">
+                    <h3 class="text-slate-400 text-xs font-bold uppercase mb-4 tracking-widest flex items-center gap-2">
+                        <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span> Live News
+                    </h3>
+                    <div id="news-feed" class="space-y-4 max-h-[300px] overflow-y-auto pr-2 text-sm">
+                        <p class="text-slate-500 italic text-xs">Loading headlines...</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <script>
-        // 1. Load Market Data
-        fetch('./data.json').then(r => r.json()).then(d => {
-            document.getElementById('ts').innerText = "LAST SYNC: " + d.last_update;
-            document.getElementById('risk-val').innerText = d.score + "/10";
-            document.getElementById('sent-val').innerText = d.sentiment.value;
-            document.getElementById('sent-lbl').innerText = d.sentiment.label;
-            document.getElementById('vix-val').innerText = d.vix.value;
-            document.getElementById('ratio-val').innerText = (d.breadth.ratio > 0 ? "+" : "") + d.breadth.ratio;
-            document.getElementById('breadth-sig').innerText = d.breadth.signal;
+        // 1. Load Updated Data
+        fetch('./data.json')
+            .then(r => r.json())
+            .then(d => {
+                document.getElementById('ts').innerText = "LAST SYNC: " + d.last_updated;
+                document.getElementById('vix-val').innerText = d.vix;
+                document.getElementById('iv-rank').innerText = d.iv_rank + "%";
+                document.getElementById('market-bias').innerText = d.market_bias;
+                document.getElementById('risk-action').innerText = d.iv_rank > 50 ? "PREMIUM SELL / IRON CONDORS" : "PREMIUM BUY / DEBIT SPREADS";
+                
+                // Update Trim List
+                const trimContainer = document.getElementById('trim-list');
+                trimContainer.innerHTML = d.trim_list.length > 0 
+                    ? d.trim_list.map(t => `<span class="bg-red-900/30 border border-red-800/50 px-2 py-1 rounded">${t}</span>`).join('')
+                    : "STRENGTH ACROSS WATCHLIST";
 
-            new ApexCharts(document.querySelector("#sector-chart"), {
-                series: [{ name: '% Change', data: d.sectors.map(s => s.change) }],
-                chart: { type: 'bar', height: 380, toolbar: {show: false} },
-                plotOptions: { bar: { distributed: true, borderRadius: 8, columnWidth: '65%' } },
-                dataLabels: { enabled: true, formatter: (v, o) => d.sectors[o.dataPointIndex].vol + "x Vol", style: {fontSize: '9px'} },
-                xaxis: { categories: d.sectors.map(s => s.name), axisBorder: {show: false} },
-                colors: d.sectors.map(s => s.change > 0 ? '#10b981' : '#ef4444'),
-                theme: { mode: 'dark' },
-                grid: { borderColor: '#1e293b' }
-            }).render();
-        });
+                // Sector Chart
+                const sectorLabels = Object.keys(d.sector_rs);
+                const sectorValues = Object.values(d.sector_rs);
 
-        // 2. Load RSS News Feed (Yahoo Finance Example)
-        const RSS_URL = `https://rss.nytimes.com/services/xml/rss/nyt/Economy.xml`; 
+                new ApexCharts(document.querySelector("#sector-chart"), {
+                    series: [{ name: 'RS Score', data: sectorValues }],
+                    chart: { type: 'bar', height: 380, toolbar: { show: false } },
+                    plotOptions: { 
+                        bar: { 
+                            distributed: true, 
+                            borderRadius: 8, 
+                            columnWidth: '65%',
+                            dataLabels: { position: 'top' } 
+                        } 
+                    },
+                    xaxis: { 
+                        categories: sectorLabels,
+                        axisBorder: { show: false }
+                    },
+                    colors: sectorValues.map(v => v > 1 ? '#10b981' : '#ef4444'),
+                    theme: { mode: 'dark' },
+                    grid: { borderColor: '#1e293b' },
+                    dataLabels: {
+                        enabled: true,
+                        offsetY: -20,
+                        style: { fontSize: '10px', colors: ["#fff"] }
+                    }
+                }).render();
+            });
+
+        // 2. News Feed
+        const RSS_URL = `https://rss.nytimes.com/services/xml/rss/nyt/Economy.xml`;
         const API_URL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS_URL)}`;
-
         fetch(API_URL)
             .then(res => res.json())
             .then(data => {
                 const container = document.getElementById('news-feed');
-                container.innerHTML = data.items.slice(0, 8).map(item => `
+                container.innerHTML = data.items.slice(0, 6).map(item => `
                     <div class="border-b border-slate-800 pb-3 group">
-                        <a href="${item.link}" target="_blank" class="hover:text-blue-400 transition-colors block font-medium leading-tight mb-1">
+                        <a href="${item.link}" target="_blank" class="hover:text-blue-400 transition-colors block font-medium leading-tight mb-1 text-slate-300">
                             ${item.title}
                         </a>
-                        <span class="text-[10px] text-slate-500 uppercase font-mono">${new Date(item.pubDate).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
+                        <span class="text-[9px] text-slate-500 uppercase font-mono">${new Date(item.pubDate).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
                     </div>
                 `).join('');
-            })
-            .catch(() => { document.getElementById('news-feed').innerHTML = "Feed temporarily unavailable."; });
+            });
     </script>
 </body>
 </html>
