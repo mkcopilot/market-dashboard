@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-27 05:00:55",
+    "last_updated": "2026-04-27 05:11:47",
     "overall_score": 72,
     "fear_greed": "Greed",
     "vix": 18.71,
@@ -44,28 +44,34 @@
     "option_sentiment": "High Call Volume / Bullish Bias",
     "calendar": [
         {
-            "date": "Apr 28",
+            "date": "Apr 29",
             "event": "MSFT Earnings",
-            "impact": "Critical",
-            "forecast": "Expected beat on Azure growth"
+            "impact": "High",
+            "forecast": "Quarterly Results"
         },
         {
             "date": "Apr 29",
             "event": "GOOGL Earnings",
             "impact": "High",
-            "forecast": "Focus on AI integration & Ad spend"
+            "forecast": "Quarterly Results"
         },
         {
-            "date": "May 01",
-            "event": "ISM Manufacturing",
-            "impact": "Medium",
-            "forecast": "Slight expansion expected"
+            "date": "Apr 29",
+            "event": "META Earnings",
+            "impact": "High",
+            "forecast": "Quarterly Results"
         },
         {
-            "date": "May 03",
-            "event": "FOMC Decision",
-            "impact": "Critical",
-            "forecast": "Focus on 2026 cut roadmap"
+            "date": "Apr 29",
+            "event": "AMZN Earnings",
+            "impact": "High",
+            "forecast": "Quarterly Results"
+        },
+        {
+            "date": "Apr 30",
+            "event": "AAPL Earnings",
+            "impact": "High",
+            "forecast": "Quarterly Results"
         }
     ]
 }
