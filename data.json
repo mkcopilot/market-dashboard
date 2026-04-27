@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-04-27 13:58:22",
+    "last_updated": "2026-04-27 15:23:40",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 19.11,
-    "iv_rank": 32.08,
+    "vix": 18.73,
+    "iv_rank": 29.92,
     "signals": {
         "buys": [
             "None"
@@ -14,20 +14,21 @@
             "MSFT",
             "GOOGL",
             "META",
-            "AMZN"
+            "AMZN",
+            "PYPL"
         ]
     },
     "sector_rs": {
-        "XLK": 1.092,
-        "XLC": 0.962,
-        "XLY": 0.989,
-        "XLP": 0.903,
-        "XLE": 0.816,
-        "XLF": 0.96,
-        "XLV": 0.898,
-        "XLI": 0.963,
-        "XLB": 0.942,
-        "XLRE": 0.971,
+        "XLK": 1.09,
+        "XLC": 0.969,
+        "XLY": 0.988,
+        "XLP": 0.901,
+        "XLE": 0.812,
+        "XLF": 0.963,
+        "XLV": 0.895,
+        "XLI": 0.961,
+        "XLB": 0.939,
+        "XLRE": 0.97,
         "XLU": 0.904
     },
     "money_flow": {
