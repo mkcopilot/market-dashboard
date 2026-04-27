@@ -1,1 +1,20 @@
-{"sentiment": {"value": 47, "label": "Neutral"}, "sectors": [{"name": "Tech", "change": 2.81, "vol": 0.96}, {"name": "Disc", "change": 0.81, "vol": 0.89}, {"name": "Matrls", "change": 0.21, "vol": 0.77}, {"name": "Utils", "change": 0.2, "vol": 1.16}, {"name": "Energy", "change": -0.19, "vol": 0.97}, {"name": "Staples", "change": -0.3, "vol": 1.07}, {"name": "RealEst", "change": -0.3, "vol": 0.83}, {"name": "Finance", "change": -0.73, "vol": 0.83}, {"name": "Indstrl", "change": -0.92, "vol": 0.81}, {"name": "Health", "change": -1.41, "vol": 1.02}, {"name": "Comm", "change": -1.58, "vol": 1.31}], "vix": {"value": 18.71, "change": -3.11}, "breadth": {"ratio": -0.982, "signal": "Concentrated"}, "score": 6.2, "last_update": "2026-04-27 04:01 EST"}
+{
+    "last_updated": "2026-04-27 04:23:58",
+    "vix": 18.71,
+    "iv_rank": 29.81,
+    "sector_rs": {
+        "XLK": 1.063,
+        "XLY": 0.941,
+        "XLB": 1.009,
+        "XLU": 1.05,
+        "XLE": 1.125,
+        "XLP": 0.978,
+        "XLRE": 1.036,
+        "XLF": 0.936,
+        "XLI": 1.018,
+        "XLV": 0.886,
+        "XLC": 0.952
+    },
+    "trim_list": [],
+    "market_bias": "VOLATILE"
+}
