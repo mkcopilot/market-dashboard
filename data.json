@@ -1,6 +1,6 @@
 {
-    "last_updated": "2026-04-27 04:40:08",
-    "overall_score": 76,
+    "last_updated": "2026-04-27 04:44:28",
+    "overall_score": 70,
     "fear_greed": "Greed",
     "vix": 18.71,
     "iv_rank": 29.81,
@@ -23,30 +23,31 @@
     },
     "money_flow": {
         "to": [
-            "Technology"
+            "Tech"
         ],
         "from": [
-            "Comm Services",
-            "Consumer Staples",
-            "Energy"
+            "Comm",
+            "Disc",
+            "Staples",
+            "Energy",
+            "Finance",
+            "Health",
+            "Indust",
+            "Mat",
+            "Util"
         ]
     },
-    "option_sentiment": "Bullish Call Flow",
+    "option_sentiment": "High Call Volume",
     "upcoming_events": [
         {
-            "event": "FOMC Interest Rate Decision",
+            "event": "FOMC Meeting",
             "date": "May 3",
-            "impact": "Critical"
-        },
-        {
-            "event": "Non-Farm Payrolls",
-            "date": "May 5",
             "impact": "High"
         },
         {
-            "event": "NVDA Earnings Release",
+            "event": "NVDA Earnings",
             "date": "May 22",
-            "impact": "High"
+            "impact": "Critical"
         }
     ]
 }
