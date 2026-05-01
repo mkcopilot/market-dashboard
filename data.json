@@ -1,32 +1,32 @@
 {
-    "last_updated": "2026-04-30 15:26:54",
+    "last_updated": "2026-05-01 14:35:54",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 17.32,
-    "iv_rank": 21.9,
+    "vix": 16.49,
+    "iv_rank": 17.18,
     "signals": {
         "buys": [
             "None"
         ],
         "sells": [
+            "AAPL",
             "AMD",
             "GOOGL",
-            "AMZN",
-            "PYPL"
+            "AMZN"
         ]
     },
     "sector_rs": {
-        "XLK": 1.1,
-        "XLC": 0.948,
-        "XLY": 0.981,
-        "XLP": 0.907,
-        "XLE": 0.85,
-        "XLF": 0.953,
-        "XLV": 0.895,
-        "XLI": 0.98,
-        "XLB": 0.928,
-        "XLRE": 0.971,
-        "XLU": 0.897
+        "XLK": 1.082,
+        "XLC": 0.951,
+        "XLY": 0.986,
+        "XLP": 0.945,
+        "XLE": 0.906,
+        "XLF": 0.964,
+        "XLV": 0.898,
+        "XLI": 0.96,
+        "XLB": 0.929,
+        "XLRE": 0.985,
+        "XLU": 0.929
     },
     "money_flow": {
         "to": [
@@ -40,18 +40,6 @@
     },
     "option_sentiment": "High Call Volume / Bullish Bias",
     "calendar": [
-        {
-            "date": "Apr 29",
-            "event": "AMZN Earnings",
-            "impact": "High",
-            "forecast": "Quarterly Results"
-        },
-        {
-            "date": "Apr 30",
-            "event": "AAPL Earnings",
-            "impact": "High",
-            "forecast": "Quarterly Results"
-        },
         {
             "date": "Jul 16",
             "event": "NFLX Earnings",
@@ -67,6 +55,18 @@
         {
             "date": "Jul 23",
             "event": "GOOGL Earnings",
+            "impact": "High",
+            "forecast": "Quarterly Results"
+        },
+        {
+            "date": "Jul 29",
+            "event": "MSFT Earnings",
+            "impact": "High",
+            "forecast": "Quarterly Results"
+        },
+        {
+            "date": "Jul 29",
+            "event": "META Earnings",
             "impact": "High",
             "forecast": "Quarterly Results"
         }
