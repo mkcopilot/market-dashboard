@@ -1,32 +1,31 @@
 {
-    "last_updated": "2026-05-01 14:35:54",
+    "last_updated": "2026-05-04 15:29:11",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 16.49,
-    "iv_rank": 17.18,
+    "vix": 17.67,
+    "iv_rank": 23.89,
     "signals": {
         "buys": [
-            "None"
+            "NFLX"
         ],
         "sells": [
-            "AAPL",
             "AMD",
             "GOOGL",
             "AMZN"
         ]
     },
     "sector_rs": {
-        "XLK": 1.082,
-        "XLC": 0.951,
-        "XLY": 0.986,
-        "XLP": 0.945,
-        "XLE": 0.906,
-        "XLF": 0.964,
-        "XLV": 0.898,
-        "XLI": 0.96,
+        "XLK": 1.086,
+        "XLC": 0.955,
+        "XLY": 0.996,
+        "XLP": 0.931,
+        "XLE": 0.91,
+        "XLF": 0.952,
+        "XLV": 0.907,
+        "XLI": 0.956,
         "XLB": 0.929,
-        "XLRE": 0.985,
-        "XLU": 0.929
+        "XLRE": 0.973,
+        "XLU": 0.926
     },
     "money_flow": {
         "to": [
