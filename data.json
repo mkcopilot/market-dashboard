@@ -1,31 +1,32 @@
 {
-    "last_updated": "2026-05-04 15:29:11",
+    "last_updated": "2026-05-06 15:40:30",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 17.67,
-    "iv_rank": 23.89,
+    "vix": 17.13,
+    "iv_rank": 20.82,
     "signals": {
         "buys": [
             "NFLX"
         ],
         "sells": [
+            "AAPL",
             "AMD",
             "GOOGL",
             "AMZN"
         ]
     },
     "sector_rs": {
-        "XLK": 1.086,
-        "XLC": 0.955,
-        "XLY": 0.996,
-        "XLP": 0.931,
-        "XLE": 0.91,
-        "XLF": 0.952,
-        "XLV": 0.907,
-        "XLI": 0.956,
-        "XLB": 0.929,
-        "XLRE": 0.973,
-        "XLU": 0.926
+        "XLK": 1.112,
+        "XLC": 0.945,
+        "XLY": 0.984,
+        "XLP": 0.916,
+        "XLE": 0.86,
+        "XLF": 0.939,
+        "XLV": 0.896,
+        "XLI": 0.964,
+        "XLB": 0.942,
+        "XLRE": 0.967,
+        "XLU": 0.894
     },
     "money_flow": {
         "to": [
@@ -39,6 +40,18 @@
     },
     "option_sentiment": "High Call Volume / Bullish Bias",
     "calendar": [
+        {
+            "date": "Aug 04",
+            "event": "AMD Earnings",
+            "impact": "High",
+            "forecast": "Quarterly Results"
+        },
+        {
+            "date": "Aug 04",
+            "event": "PYPL Earnings",
+            "impact": "High",
+            "forecast": "Quarterly Results"
+        },
         {
             "date": "Jul 16",
             "event": "NFLX Earnings",
@@ -54,18 +67,6 @@
         {
             "date": "Jul 23",
             "event": "GOOGL Earnings",
-            "impact": "High",
-            "forecast": "Quarterly Results"
-        },
-        {
-            "date": "Jul 29",
-            "event": "MSFT Earnings",
-            "impact": "High",
-            "forecast": "Quarterly Results"
-        },
-        {
-            "date": "Jul 29",
-            "event": "META Earnings",
             "impact": "High",
             "forecast": "Quarterly Results"
         }
