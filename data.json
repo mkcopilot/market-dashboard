@@ -1,13 +1,14 @@
 {
-    "last_updated": "2026-05-07 15:41:46",
+    "last_updated": "2026-05-08 15:07:01",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 17.19,
-    "iv_rank": 21.16,
+    "vix": 17.34,
+    "iv_rank": 22.01,
     "signals": {
         "buys": [
             "META",
-            "NFLX"
+            "NFLX",
+            "PYPL"
         ],
         "sells": [
             "AMD",
@@ -16,17 +17,17 @@
         ]
     },
     "sector_rs": {
-        "XLK": 1.119,
-        "XLC": 0.947,
-        "XLY": 1.001,
-        "XLP": 0.925,
-        "XLE": 0.827,
-        "XLF": 0.931,
-        "XLV": 0.883,
-        "XLI": 0.958,
-        "XLB": 0.931,
-        "XLRE": 0.958,
-        "XLU": 0.879
+        "XLK": 1.126,
+        "XLC": 0.941,
+        "XLY": 1.0,
+        "XLP": 0.935,
+        "XLE": 0.884,
+        "XLF": 0.92,
+        "XLV": 0.881,
+        "XLI": 0.936,
+        "XLB": 0.918,
+        "XLRE": 0.961,
+        "XLU": 0.878
     },
     "money_flow": {
         "to": [
