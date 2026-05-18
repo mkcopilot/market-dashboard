@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-05-15 15:35:32",
+    "last_updated": "2026-05-18 16:38:35",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 18.07,
-    "iv_rank": 26.17,
+    "vix": 18.38,
+    "iv_rank": 27.93,
     "signals": {
         "buys": [
             "META",
@@ -11,22 +11,21 @@
         ],
         "sells": [
             "AAPL",
-            "AMD",
             "GOOGL"
         ]
     },
     "sector_rs": {
-        "XLK": 1.114,
-        "XLC": 0.937,
-        "XLY": 0.933,
-        "XLP": 0.987,
-        "XLE": 0.999,
-        "XLF": 0.926,
-        "XLV": 0.93,
-        "XLI": 0.948,
-        "XLB": 0.927,
-        "XLRE": 0.941,
-        "XLU": 0.906
+        "XLK": 1.078,
+        "XLC": 0.951,
+        "XLY": 0.936,
+        "XLP": 0.998,
+        "XLE": 1.059,
+        "XLF": 0.943,
+        "XLV": 0.949,
+        "XLI": 0.942,
+        "XLB": 0.928,
+        "XLRE": 0.94,
+        "XLU": 0.919
     },
     "money_flow": {
         "to": [
