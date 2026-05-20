@@ -1,29 +1,29 @@
 {
-    "last_updated": "2026-05-19 16:37:16",
+    "last_updated": "2026-05-20 16:34:15",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 18.02,
-    "iv_rank": 25.88,
+    "vix": 17.77,
+    "iv_rank": 24.46,
     "signals": {
         "buys": [
-            "META",
             "PYPL"
         ],
         "sells": [
-            "AAPL"
+            "AAPL",
+            "NVDA"
         ]
     },
     "sector_rs": {
-        "XLK": 1.084,
-        "XLC": 0.941,
-        "XLY": 0.92,
-        "XLP": 1.011,
-        "XLE": 1.071,
-        "XLF": 0.944,
-        "XLV": 0.965,
-        "XLI": 0.939,
-        "XLB": 0.91,
-        "XLRE": 0.949,
+        "XLK": 1.092,
+        "XLC": 0.934,
+        "XLY": 0.937,
+        "XLP": 0.999,
+        "XLE": 1.051,
+        "XLF": 0.939,
+        "XLV": 0.953,
+        "XLI": 0.943,
+        "XLB": 0.909,
+        "XLRE": 0.951,
         "XLU": 0.934
     },
     "money_flow": {
