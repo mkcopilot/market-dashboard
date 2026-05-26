@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-05-25 16:06:02",
+    "last_updated": "2026-05-26 16:55:25",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 16.59,
-    "iv_rank": 17.75,
+    "vix": 17.02,
+    "iv_rank": 20.19,
     "signals": {
         "buys": [
             "PYPL"
@@ -14,17 +14,17 @@
         ]
     },
     "sector_rs": {
-        "XLK": 1.1,
-        "XLC": 0.935,
-        "XLY": 0.962,
-        "XLP": 0.965,
-        "XLE": 0.992,
-        "XLF": 0.953,
-        "XLV": 0.974,
-        "XLI": 0.938,
-        "XLB": 0.922,
-        "XLRE": 0.963,
-        "XLU": 0.935
+        "XLK": 1.097,
+        "XLC": 0.952,
+        "XLY": 0.964,
+        "XLP": 0.971,
+        "XLE": 0.981,
+        "XLF": 0.955,
+        "XLV": 0.992,
+        "XLI": 0.962,
+        "XLB": 0.938,
+        "XLRE": 0.981,
+        "XLU": 0.94
     },
     "money_flow": {
         "to": [
