@@ -1,30 +1,29 @@
 {
-    "last_updated": "2026-05-26 16:55:25",
+    "last_updated": "2026-05-27 16:48:13",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 17.02,
-    "iv_rank": 20.19,
+    "vix": 16.79,
+    "iv_rank": 18.89,
     "signals": {
         "buys": [
             "PYPL"
         ],
         "sells": [
-            "AAPL",
-            "AMD"
+            "AAPL"
         ]
     },
     "sector_rs": {
-        "XLK": 1.097,
-        "XLC": 0.952,
-        "XLY": 0.964,
-        "XLP": 0.971,
-        "XLE": 0.981,
-        "XLF": 0.955,
-        "XLV": 0.992,
-        "XLI": 0.962,
-        "XLB": 0.938,
-        "XLRE": 0.981,
-        "XLU": 0.94
+        "XLK": 1.094,
+        "XLC": 0.959,
+        "XLY": 0.984,
+        "XLP": 0.982,
+        "XLE": 0.961,
+        "XLF": 0.944,
+        "XLV": 0.989,
+        "XLI": 0.965,
+        "XLB": 0.943,
+        "XLRE": 0.98,
+        "XLU": 0.931
     },
     "money_flow": {
         "to": [
@@ -45,6 +44,12 @@
             "forecast": "Quarterly Results"
         },
         {
+            "date": "Aug 26",
+            "event": "NVDA Earnings",
+            "impact": "High",
+            "forecast": "Quarterly Results"
+        },
+        {
             "date": "Jul 16",
             "event": "NFLX Earnings",
             "impact": "High",
@@ -59,12 +64,6 @@
         {
             "date": "Jul 23",
             "event": "GOOGL Earnings",
-            "impact": "High",
-            "forecast": "Quarterly Results"
-        },
-        {
-            "date": "Jul 28",
-            "event": "PYPL Earnings",
             "impact": "High",
             "forecast": "Quarterly Results"
         }
