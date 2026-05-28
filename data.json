@@ -1,29 +1,30 @@
 {
-    "last_updated": "2026-05-27 16:48:13",
+    "last_updated": "2026-05-28 17:05:41",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 16.79,
-    "iv_rank": 18.89,
+    "vix": 15.84,
+    "iv_rank": 13.48,
     "signals": {
         "buys": [
-            "PYPL"
+            "None"
         ],
         "sells": [
-            "AAPL"
+            "AAPL",
+            "AMD"
         ]
     },
     "sector_rs": {
-        "XLK": 1.094,
-        "XLC": 0.959,
-        "XLY": 0.984,
-        "XLP": 0.982,
-        "XLE": 0.961,
-        "XLF": 0.944,
-        "XLV": 0.989,
-        "XLI": 0.965,
+        "XLK": 1.12,
+        "XLC": 0.947,
+        "XLY": 0.98,
+        "XLP": 0.961,
+        "XLE": 0.932,
+        "XLF": 0.932,
+        "XLV": 0.988,
+        "XLI": 0.962,
         "XLB": 0.943,
-        "XLRE": 0.98,
-        "XLU": 0.931
+        "XLRE": 0.96,
+        "XLU": 0.917
     },
     "money_flow": {
         "to": [
