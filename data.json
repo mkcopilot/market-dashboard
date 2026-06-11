@@ -1,32 +1,33 @@
 {
-    "last_updated": "2026-06-10 16:47:07",
+    "last_updated": "2026-06-11 17:05:21",
     "overall_score": 72,
     "fear_greed": "Fear",
-    "vix": 22.01,
-    "iv_rank": 48.58,
+    "vix": 21.39,
+    "iv_rank": 45.05,
     "signals": {
         "buys": [
             "GOOGL",
             "AMZN",
             "NFLX",
-            "PYPL"
+            "PYPL",
+            "COIN"
         ],
         "sells": [
             "None"
         ]
     },
     "sector_rs": {
-        "XLK": 1.013,
-        "XLC": 0.978,
-        "XLY": 0.966,
-        "XLP": 1.037,
-        "XLE": 1.043,
-        "XLF": 1.04,
-        "XLV": 1.087,
-        "XLI": 0.99,
-        "XLB": 0.971,
-        "XLRE": 1.026,
-        "XLU": 0.99
+        "XLK": 1.018,
+        "XLC": 0.976,
+        "XLY": 0.968,
+        "XLP": 1.043,
+        "XLE": 1.037,
+        "XLF": 1.037,
+        "XLV": 1.093,
+        "XLI": 1.0,
+        "XLB": 0.979,
+        "XLRE": 1.022,
+        "XLU": 0.997
     },
     "money_flow": {
         "to": [
