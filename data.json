@@ -1,12 +1,15 @@
 {
-    "last_updated": "2026-06-24 15:40:32",
+    "last_updated": "2026-06-25 15:58:58",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 18.29,
-    "iv_rank": 27.42,
+    "vix": 18.97,
+    "iv_rank": 31.29,
     "signals": {
         "buys": [
+            "AAPL",
             "MSFT",
+            "GOOGL",
+            "META",
             "NFLX"
         ],
         "sells": [
@@ -15,16 +18,16 @@
     },
     "sector_rs": {
         "XLK": 1.012,
-        "XLC": 0.945,
-        "XLY": 0.991,
-        "XLP": 1.032,
-        "XLE": 0.942,
-        "XLF": 1.06,
-        "XLV": 1.051,
-        "XLI": 1.057,
-        "XLB": 1.024,
+        "XLC": 0.938,
+        "XLY": 0.978,
+        "XLP": 1.033,
+        "XLE": 0.957,
+        "XLF": 1.068,
+        "XLV": 1.08,
+        "XLI": 1.078,
+        "XLB": 1.041,
         "XLRE": 1.018,
-        "XLU": 1.022
+        "XLU": 1.031
     },
     "money_flow": {
         "to": [
