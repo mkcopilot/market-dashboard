@@ -1,30 +1,31 @@
 {
-    "last_updated": "2026-07-14 15:07:08",
+    "last_updated": "2026-07-15 15:06:37",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 16.47,
-    "iv_rank": 17.06,
+    "vix": 16.16,
+    "iv_rank": 15.3,
     "signals": {
         "buys": [
             "None"
         ],
         "sells": [
             "META",
+            "AMZN",
             "PYPL"
         ]
     },
     "sector_rs": {
-        "XLK": 0.96,
-        "XLC": 0.999,
-        "XLY": 0.98,
+        "XLK": 0.942,
+        "XLC": 1.012,
+        "XLY": 0.993,
         "XLP": 0.99,
-        "XLE": 1.025,
-        "XLF": 1.061,
-        "XLV": 1.04,
-        "XLI": 1.016,
-        "XLB": 0.973,
-        "XLRE": 0.998,
-        "XLU": 1.035
+        "XLE": 1.017,
+        "XLF": 1.062,
+        "XLV": 1.043,
+        "XLI": 1.01,
+        "XLB": 0.968,
+        "XLRE": 1.003,
+        "XLU": 1.031
     },
     "money_flow": {
         "to": [
