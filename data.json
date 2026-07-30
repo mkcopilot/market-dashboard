@@ -1,32 +1,31 @@
 {
-    "last_updated": "2026-07-29 15:27:12",
+    "last_updated": "2026-07-30 15:29:05",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 19.82,
-    "iv_rank": 36.12,
+    "vix": 19.03,
+    "iv_rank": 31.63,
     "signals": {
         "buys": [
             "TSLA",
-            "AMD",
-            "AMZN"
+            "META"
         ],
         "sells": [
-            "AAPL",
+            "MSFT",
             "PYPL"
         ]
     },
     "sector_rs": {
-        "XLK": 0.917,
-        "XLC": 1.024,
-        "XLY": 0.965,
-        "XLP": 1.045,
-        "XLE": 1.109,
-        "XLF": 1.073,
-        "XLV": 1.052,
-        "XLI": 0.981,
-        "XLB": 1.023,
-        "XLRE": 1.028,
-        "XLU": 0.99
+        "XLK": 0.929,
+        "XLC": 1.002,
+        "XLY": 0.968,
+        "XLP": 1.042,
+        "XLE": 1.112,
+        "XLF": 1.067,
+        "XLV": 1.04,
+        "XLI": 0.966,
+        "XLB": 1.028,
+        "XLRE": 1.039,
+        "XLU": 0.995
     },
     "money_flow": {
         "to": [
@@ -53,20 +52,20 @@
             "forecast": "Quarterly Results"
         },
         {
-            "date": "Jul 29",
-            "event": "MSFT Earnings",
-            "impact": "High",
-            "forecast": "Quarterly Results"
-        },
-        {
-            "date": "Jul 29",
-            "event": "META Earnings",
+            "date": "Jul 30",
+            "event": "AAPL Earnings",
             "impact": "High",
             "forecast": "Quarterly Results"
         },
         {
             "date": "Jul 30",
-            "event": "AAPL Earnings",
+            "event": "AMZN Earnings",
+            "impact": "High",
+            "forecast": "Quarterly Results"
+        },
+        {
+            "date": "Jul 30",
+            "event": "COIN Earnings",
             "impact": "High",
             "forecast": "Quarterly Results"
         }
