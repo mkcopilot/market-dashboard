@@ -1,13 +1,12 @@
 {
-    "last_updated": "2026-07-31 15:35:23",
+    "last_updated": "2026-08-03 16:00:28",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 17.52,
-    "iv_rank": 23.04,
+    "vix": 15.65,
+    "iv_rank": 12.4,
     "signals": {
         "buys": [
-            "TSLA",
-            "META"
+            "TSLA"
         ],
         "sells": [
             "MSFT",
@@ -15,17 +14,17 @@
         ]
     },
     "sector_rs": {
-        "XLK": 0.919,
+        "XLK": 0.959,
         "XLC": 1.007,
-        "XLY": 0.989,
-        "XLP": 1.034,
-        "XLE": 1.117,
-        "XLF": 1.071,
-        "XLV": 1.031,
-        "XLI": 0.975,
-        "XLB": 0.998,
-        "XLRE": 1.032,
-        "XLU": 0.99
+        "XLY": 0.996,
+        "XLP": 1.004,
+        "XLE": 1.106,
+        "XLF": 1.012,
+        "XLV": 0.995,
+        "XLI": 0.974,
+        "XLB": 0.969,
+        "XLRE": 1.015,
+        "XLU": 0.974
     },
     "money_flow": {
         "to": [
