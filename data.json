@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-08-04 15:44:12",
+    "last_updated": "2026-08-05 15:35:58",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 16.27,
-    "iv_rank": 15.93,
+    "vix": 16.32,
+    "iv_rank": 16.21,
     "signals": {
         "buys": [
             "TSLA",
@@ -14,17 +14,17 @@
         ]
     },
     "sector_rs": {
-        "XLK": 0.99,
-        "XLC": 0.986,
+        "XLK": 0.991,
+        "XLC": 0.983,
         "XLY": 0.979,
-        "XLP": 0.985,
-        "XLE": 1.072,
-        "XLF": 1.009,
-        "XLV": 0.975,
-        "XLI": 0.976,
-        "XLB": 0.972,
-        "XLRE": 0.994,
-        "XLU": 0.949
+        "XLP": 0.982,
+        "XLE": 1.048,
+        "XLF": 1.002,
+        "XLV": 0.979,
+        "XLI": 0.979,
+        "XLB": 0.984,
+        "XLRE": 0.984,
+        "XLU": 0.933
     },
     "money_flow": {
         "to": [
@@ -38,12 +38,6 @@
     },
     "option_sentiment": "High Call Volume / Bullish Bias",
     "calendar": [
-        {
-            "date": "Aug 04",
-            "event": "AMD Earnings",
-            "impact": "High",
-            "forecast": "Quarterly Results"
-        },
         {
             "date": "Aug 26",
             "event": "NVDA Earnings",
@@ -61,6 +55,12 @@
             "event": "FOMC Rate Decision",
             "impact": "Critical",
             "forecast": "Market pricing 90% pause"
+        },
+        {
+            "date": "Nov 03",
+            "event": "AMD Earnings",
+            "impact": "High",
+            "forecast": "Quarterly Results"
         },
         {
             "date": "Oct 20",
