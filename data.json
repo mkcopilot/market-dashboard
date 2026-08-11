@@ -1,30 +1,31 @@
 {
-    "last_updated": "2026-08-10 14:35:04",
+    "last_updated": "2026-08-11 14:34:37",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 15.24,
-    "iv_rank": 10.07,
+    "vix": 15.41,
+    "iv_rank": 11.04,
     "signals": {
         "buys": [
             "None"
         ],
         "sells": [
             "MSFT",
-            "NFLX"
+            "NFLX",
+            "PYPL"
         ]
     },
     "sector_rs": {
-        "XLK": 0.987,
-        "XLC": 0.972,
-        "XLY": 0.993,
-        "XLP": 0.981,
-        "XLE": 1.048,
-        "XLF": 1.011,
-        "XLV": 1.013,
-        "XLI": 0.994,
-        "XLB": 1.012,
-        "XLRE": 0.972,
-        "XLU": 0.928
+        "XLK": 0.999,
+        "XLC": 0.973,
+        "XLY": 0.999,
+        "XLP": 0.969,
+        "XLE": 1.036,
+        "XLF": 0.999,
+        "XLV": 1.008,
+        "XLI": 1.004,
+        "XLB": 1.021,
+        "XLRE": 0.958,
+        "XLU": 0.918
     },
     "money_flow": {
         "to": [
