@@ -1,30 +1,30 @@
 {
-    "last_updated": "2026-08-19 14:04:30",
+    "last_updated": "2026-08-20 14:06:23",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 15.51,
-    "iv_rank": 11.6,
+    "vix": 15.64,
+    "iv_rank": 12.34,
     "signals": {
         "buys": [
             "None"
         ],
         "sells": [
-            "TSLA",
-            "NVDA"
+            "NFLX",
+            "PYPL"
         ]
     },
     "sector_rs": {
-        "XLK": 1.007,
-        "XLC": 0.969,
-        "XLY": 0.993,
-        "XLP": 0.987,
-        "XLE": 1.064,
-        "XLF": 0.999,
-        "XLV": 1.063,
-        "XLI": 0.991,
-        "XLB": 1.018,
-        "XLRE": 0.958,
-        "XLU": 0.946
+        "XLK": 1.01,
+        "XLC": 0.971,
+        "XLY": 0.988,
+        "XLP": 0.978,
+        "XLE": 1.079,
+        "XLF": 0.991,
+        "XLV": 1.061,
+        "XLI": 0.984,
+        "XLB": 1.016,
+        "XLRE": 0.967,
+        "XLU": 0.952
     },
     "money_flow": {
         "to": [
