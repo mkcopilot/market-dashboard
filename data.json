@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-08-28 23:07:24",
+    "last_updated": "2026-08-31 19:33:29",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 14.43,
-    "iv_rank": 5.46,
+    "vix": 15.03,
+    "iv_rank": 8.87,
     "signals": {
         "buys": [
             "None"
@@ -13,17 +13,17 @@
         ]
     },
     "sector_rs": {
-        "XLK": 1.057,
-        "XLC": 0.978,
-        "XLY": 0.996,
-        "XLP": 0.927,
-        "XLE": 1.013,
-        "XLF": 0.972,
-        "XLV": 0.976,
-        "XLI": 0.951,
-        "XLB": 0.975,
-        "XLRE": 0.918,
-        "XLU": 0.902
+        "XLK": 1.034,
+        "XLC": 1.005,
+        "XLY": 0.978,
+        "XLP": 0.974,
+        "XLE": 1.045,
+        "XLF": 0.988,
+        "XLV": 1.024,
+        "XLI": 0.949,
+        "XLB": 1.017,
+        "XLRE": 0.955,
+        "XLU": 0.929
     },
     "money_flow": {
         "to": [
