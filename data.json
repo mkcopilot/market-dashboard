@@ -1,29 +1,29 @@
 {
-    "last_updated": "2026-09-30 18:30:04",
+    "last_updated": "2026-10-01 18:57:42",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 15.81,
-    "iv_rank": 13.31,
+    "vix": 16.47,
+    "iv_rank": 17.06,
     "signals": {
         "buys": [
-            "None"
+            "NFLX"
         ],
         "sells": [
             "AMD"
         ]
     },
     "sector_rs": {
-        "XLK": 1.053,
-        "XLC": 1.003,
-        "XLY": 0.935,
-        "XLP": 0.956,
-        "XLE": 0.972,
+        "XLK": 1.074,
+        "XLC": 0.99,
+        "XLY": 0.948,
+        "XLP": 0.944,
+        "XLE": 0.966,
         "XLF": 0.929,
-        "XLV": 0.995,
-        "XLI": 0.958,
-        "XLB": 0.933,
-        "XLRE": 0.936,
-        "XLU": 0.941
+        "XLV": 0.968,
+        "XLI": 0.971,
+        "XLB": 0.931,
+        "XLRE": 0.925,
+        "XLU": 0.93
     },
     "money_flow": {
         "to": [
