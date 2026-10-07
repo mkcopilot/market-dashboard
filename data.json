@@ -1,12 +1,12 @@
 {
-    "last_updated": "2026-10-06 18:58:48",
+    "last_updated": "2026-10-07 19:25:45",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 15.04,
-    "iv_rank": 8.93,
+    "vix": 15.1,
+    "iv_rank": 9.27,
     "signals": {
         "buys": [
-            "NFLX"
+            "None"
         ],
         "sells": [
             "NVDA",
@@ -15,17 +15,17 @@
         ]
     },
     "sector_rs": {
-        "XLK": 1.057,
-        "XLC": 0.983,
-        "XLY": 0.96,
-        "XLP": 0.959,
-        "XLE": 0.973,
-        "XLF": 0.926,
-        "XLV": 0.984,
-        "XLI": 0.966,
-        "XLB": 0.945,
-        "XLRE": 0.925,
-        "XLU": 0.93
+        "XLK": 1.054,
+        "XLC": 0.985,
+        "XLY": 0.963,
+        "XLP": 0.965,
+        "XLE": 0.969,
+        "XLF": 0.925,
+        "XLV": 0.997,
+        "XLI": 0.95,
+        "XLB": 0.934,
+        "XLRE": 0.92,
+        "XLU": 0.94
     },
     "money_flow": {
         "to": [
@@ -52,6 +52,12 @@
             "forecast": "Market pricing 90% pause"
         },
         {
+            "date": "Nov 02",
+            "event": "AAPL Earnings",
+            "impact": "High",
+            "forecast": "Quarterly Results"
+        },
+        {
             "date": "Nov 03",
             "event": "AMD Earnings",
             "impact": "High",
@@ -60,12 +66,6 @@
         {
             "date": "Nov 17",
             "event": "NVDA Earnings",
-            "impact": "High",
-            "forecast": "Quarterly Results"
-        },
-        {
-            "date": "Oct 20",
-            "event": "NFLX Earnings",
             "impact": "High",
             "forecast": "Quarterly Results"
         }
