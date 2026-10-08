@@ -1,31 +1,29 @@
 {
-    "last_updated": "2026-10-07 19:25:45",
+    "last_updated": "2026-10-08 19:20:39",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 15.1,
-    "iv_rank": 9.27,
+    "vix": 15.66,
+    "iv_rank": 12.46,
     "signals": {
         "buys": [
             "None"
         ],
         "sells": [
-            "NVDA",
-            "AMD",
-            "MSFT"
+            "None"
         ]
     },
     "sector_rs": {
-        "XLK": 1.054,
-        "XLC": 0.985,
-        "XLY": 0.963,
-        "XLP": 0.965,
-        "XLE": 0.969,
-        "XLF": 0.925,
+        "XLK": 1.039,
+        "XLC": 0.995,
+        "XLY": 0.97,
+        "XLP": 0.99,
+        "XLE": 1.005,
+        "XLF": 0.94,
         "XLV": 0.997,
-        "XLI": 0.95,
-        "XLB": 0.934,
-        "XLRE": 0.92,
-        "XLU": 0.94
+        "XLI": 0.956,
+        "XLB": 0.942,
+        "XLRE": 0.928,
+        "XLU": 0.941
     },
     "money_flow": {
         "to": [
