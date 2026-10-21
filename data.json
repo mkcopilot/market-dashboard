@@ -1,29 +1,30 @@
 {
-    "last_updated": "2026-10-19 19:24:03",
+    "last_updated": "2026-10-21 18:08:49",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 18.28,
-    "iv_rank": 27.36,
+    "vix": 16.61,
+    "iv_rank": 17.86,
     "signals": {
         "buys": [
             "None"
         ],
         "sells": [
-            "AAPL"
+            "AAPL",
+            "PYPL"
         ]
     },
     "sector_rs": {
-        "XLK": 0.964,
-        "XLC": 0.969,
-        "XLY": 1.028,
-        "XLP": 1.073,
-        "XLE": 1.093,
-        "XLF": 0.992,
-        "XLV": 1.048,
+        "XLK": 0.968,
+        "XLC": 0.953,
+        "XLY": 1.033,
+        "XLP": 1.063,
+        "XLE": 1.089,
+        "XLF": 1.002,
+        "XLV": 1.056,
         "XLI": 0.991,
-        "XLB": 1.033,
-        "XLRE": 0.985,
-        "XLU": 1.024
+        "XLB": 1.032,
+        "XLRE": 0.99,
+        "XLU": 1.036
     },
     "money_flow": {
         "to": [
@@ -37,6 +38,12 @@
     },
     "option_sentiment": "High Call Volume / Bullish Bias",
     "calendar": [
+        {
+            "date": "Jan 19",
+            "event": "NFLX Earnings",
+            "impact": "High",
+            "forecast": "Quarterly Results"
+        },
         {
             "date": "May 01",
             "event": "ISM Manufacturing",
@@ -58,12 +65,6 @@
         {
             "date": "Nov 03",
             "event": "AMD Earnings",
-            "impact": "High",
-            "forecast": "Quarterly Results"
-        },
-        {
-            "date": "Nov 17",
-            "event": "NVDA Earnings",
             "impact": "High",
             "forecast": "Quarterly Results"
         }
