@@ -1,35 +1,31 @@
 {
-    "last_updated": "2026-11-02 22:23:47",
+    "last_updated": "2026-11-03 20:12:03",
     "overall_score": 72,
     "fear_greed": "Fear",
-    "vix": 21.15,
-    "iv_rank": 43.69,
+    "vix": 21.03,
+    "iv_rank": 43.0,
     "signals": {
         "buys": [
-            "NVDA",
-            "AMD",
-            "MSFT",
             "GOOGL",
             "META",
-            "NFLX",
-            "COIN"
+            "NFLX"
         ],
         "sells": [
             "None"
         ]
     },
     "sector_rs": {
-        "XLK": 0.893,
-        "XLC": 0.925,
-        "XLY": 1.102,
-        "XLP": 1.155,
-        "XLE": 1.092,
-        "XLF": 1.101,
-        "XLV": 1.136,
-        "XLI": 1.028,
-        "XLB": 1.117,
-        "XLRE": 1.105,
-        "XLU": 1.126
+        "XLK": 0.901,
+        "XLC": 0.93,
+        "XLY": 1.09,
+        "XLP": 1.13,
+        "XLE": 1.083,
+        "XLF": 1.091,
+        "XLV": 1.132,
+        "XLI": 1.034,
+        "XLB": 1.092,
+        "XLRE": 1.099,
+        "XLU": 1.118
     },
     "money_flow": {
         "to": [
@@ -68,10 +64,10 @@
             "forecast": "Quarterly Results"
         },
         {
-            "date": "May 01",
-            "event": "ISM Manufacturing",
-            "impact": "Medium",
-            "forecast": "Focus on Inflation data"
+            "date": "Jan 28",
+            "event": "AAPL Earnings",
+            "impact": "High",
+            "forecast": "Quarterly Results"
         }
     ]
 }
