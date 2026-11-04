@@ -1,31 +1,30 @@
 {
-    "last_updated": "2026-11-03 20:12:03",
+    "last_updated": "2026-11-04 20:29:05",
     "overall_score": 72,
-    "fear_greed": "Fear",
-    "vix": 21.03,
-    "iv_rank": 43.0,
+    "fear_greed": "Greed",
+    "vix": 16.85,
+    "iv_rank": 19.23,
     "signals": {
         "buys": [
             "GOOGL",
-            "META",
-            "NFLX"
+            "META"
         ],
         "sells": [
             "None"
         ]
     },
     "sector_rs": {
-        "XLK": 0.901,
-        "XLC": 0.93,
-        "XLY": 1.09,
-        "XLP": 1.13,
-        "XLE": 1.083,
-        "XLF": 1.091,
-        "XLV": 1.132,
-        "XLI": 1.034,
-        "XLB": 1.092,
-        "XLRE": 1.099,
-        "XLU": 1.118
+        "XLK": 0.888,
+        "XLC": 0.95,
+        "XLY": 1.12,
+        "XLP": 1.147,
+        "XLE": 1.005,
+        "XLF": 1.107,
+        "XLV": 1.146,
+        "XLI": 1.005,
+        "XLB": 1.096,
+        "XLRE": 1.117,
+        "XLU": 1.102
     },
     "money_flow": {
         "to": [
@@ -39,6 +38,12 @@
     },
     "option_sentiment": "High Call Volume / Bullish Bias",
     "calendar": [
+        {
+            "date": "Feb 02",
+            "event": "AMD Earnings",
+            "impact": "High",
+            "forecast": "Quarterly Results"
+        },
         {
             "date": "Jan 19",
             "event": "NFLX Earnings",
@@ -60,12 +65,6 @@
         {
             "date": "Jan 27",
             "event": "META Earnings",
-            "impact": "High",
-            "forecast": "Quarterly Results"
-        },
-        {
-            "date": "Jan 28",
-            "event": "AAPL Earnings",
             "impact": "High",
             "forecast": "Quarterly Results"
         }
