@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-11-12 20:59:10",
+    "last_updated": "2026-11-13 20:34:19",
     "overall_score": 72,
     "fear_greed": "Greed",
-    "vix": 18.85,
-    "iv_rank": 30.6,
+    "vix": 18.95,
+    "iv_rank": 31.17,
     "signals": {
         "buys": [
             "NVDA",
@@ -14,17 +14,17 @@
         ]
     },
     "sector_rs": {
-        "XLK": 0.909,
-        "XLC": 0.992,
+        "XLK": 0.894,
+        "XLC": 1.0,
         "XLY": 1.103,
-        "XLP": 1.109,
-        "XLE": 1.002,
-        "XLF": 1.086,
-        "XLV": 1.123,
-        "XLI": 1.029,
-        "XLB": 1.088,
-        "XLRE": 1.087,
-        "XLU": 1.081
+        "XLP": 1.132,
+        "XLE": 0.996,
+        "XLF": 1.102,
+        "XLV": 1.15,
+        "XLI": 1.032,
+        "XLB": 1.085,
+        "XLRE": 1.095,
+        "XLU": 1.086
     },
     "money_flow": {
         "to": [
