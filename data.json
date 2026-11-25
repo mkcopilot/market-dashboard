@@ -1,13 +1,12 @@
 {
-    "last_updated": "2026-11-24 23:11:34",
+    "last_updated": "2026-11-25 22:38:52",
     "overall_score": 72,
     "fear_greed": "Fear",
-    "vix": 26.36,
-    "iv_rank": 57.49,
+    "vix": 28.29,
+    "iv_rank": 66.1,
     "signals": {
         "buys": [
             "MSFT",
-            "NFLX",
             "COIN"
         ],
         "sells": [
@@ -15,17 +14,17 @@
         ]
     },
     "sector_rs": {
-        "XLK": 0.898,
-        "XLC": 1.071,
-        "XLY": 1.097,
-        "XLP": 1.112,
-        "XLE": 0.924,
-        "XLF": 1.067,
-        "XLV": 1.097,
-        "XLI": 1.031,
-        "XLB": 1.04,
-        "XLRE": 1.081,
-        "XLU": 1.086
+        "XLK": 0.893,
+        "XLC": 1.084,
+        "XLY": 1.098,
+        "XLP": 1.121,
+        "XLE": 0.934,
+        "XLF": 1.077,
+        "XLV": 1.094,
+        "XLI": 1.042,
+        "XLB": 1.064,
+        "XLRE": 1.094,
+        "XLU": 1.095
     },
     "money_flow": {
         "to": [
