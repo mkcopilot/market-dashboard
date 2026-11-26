@@ -1,9 +1,9 @@
 {
-    "last_updated": "2026-11-25 22:38:52",
+    "last_updated": "2026-11-26 22:29:06",
     "overall_score": 72,
     "fear_greed": "Fear",
-    "vix": 28.29,
-    "iv_rank": 66.1,
+    "vix": 26.8,
+    "iv_rank": 59.46,
     "signals": {
         "buys": [
             "MSFT",
